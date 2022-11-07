@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practices/screens/demo01/detail_screen.dart';
 import 'package:flutter_ui_practices/widgets/demo01/home_widgets.dart';
 
 class Demo01HomeScreen extends StatelessWidget {
@@ -98,7 +99,14 @@ class Demo01HomeScreen extends StatelessWidget {
                 //     ),
                 //   )),
                 // ),
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Demo01DetailScreen(),
+                    ),
+                  )
+                },
                 child: const Padding(
                   padding: EdgeInsets.only(
                     left: 60.0,
