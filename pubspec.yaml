@@ -55,6 +55,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/demo01/
+    - assets/demo02/
     # - assets/demo01/kengenlogo.jpeg
     # - assets/demo01/airtellogo.png
     # - assets/demo01/totallogo.jpg
