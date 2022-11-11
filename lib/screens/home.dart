@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_practices/data/navigation.dart';
 import 'package:intl/intl.dart';
 
-import 'demo01/home_screen.dart';
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -44,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const Demo01HomeScreen(),
+                        builder: (context) => navigations[index].screen,
                       ),
                     );
                     // Navigator.pop(context);
