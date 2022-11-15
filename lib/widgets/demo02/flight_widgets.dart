@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practices/screens/demo02/seat_screen.dart';
 
 class TopLeftAirline extends StatelessWidget {
   const TopLeftAirline({
@@ -275,10 +276,9 @@ class SearchFlightBtn extends StatelessWidget {
           fixedSize: const Size(double.infinity, 50),
         ),
         onPressed: () {
-          // Navigator.push(context,
-          //     new MaterialPageRoute(builder: ((context) {
-          //   return SeatScreen();
-          // })));
+          Navigator.push(context, MaterialPageRoute(builder: ((context) {
+            return const Demo02SeatScreen();
+          })));
         },
         child: const Text(
           'Search Flight',
