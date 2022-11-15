@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practices/screens/demo02/ticket_screen.dart';
 
 AppBar getDemo02SeatAppBar() {
   return AppBar(
@@ -114,14 +115,14 @@ class BottomCard extends StatelessWidget {
                   fixedSize: const Size(double.infinity, 60),
                 ),
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: ((context) {
-                  //       return TicketScreen();
-                  //     }),
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) {
+                        return const Demo02TicketScreen();
+                      }),
+                    ),
+                  );
                 },
                 child: const Text(
                   'Purchase',
