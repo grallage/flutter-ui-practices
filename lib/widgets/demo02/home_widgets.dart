@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practices/screens/demo02/flight_screen.dart';
 
 class UserTextInfo extends StatelessWidget {
   const UserTextInfo({
@@ -265,7 +266,15 @@ class BottomCard extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink[300],
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (builder) {
+                        return const Demo02FlightScreen();
+                      },
+                    ),
+                  );
+                },
                 child: Text(
                   btnText,
                   style: const TextStyle(color: Colors.white),
