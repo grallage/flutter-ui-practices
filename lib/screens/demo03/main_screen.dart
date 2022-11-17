@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practices/screens/demo03/home_screen.dart';
 import 'package:flutter_ui_practices/widgets/demo03/custom_nav_bar.dart';
-
-import 'home_screen.dart';
 
 class Demo03MainScreen extends StatefulWidget {
   const Demo03MainScreen({super.key});
@@ -16,10 +15,11 @@ class _Demo03MainScreenState extends State<Demo03MainScreen> {
   Widget _getBody() {
     List<Widget> pages = [
       const Demo03HomeScreen(),
+      // const Demo03ProductDetailScreen(),
       Container(
         alignment: Alignment.center,
         child: const Text(
-          "Users",
+          "Products",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
       ),

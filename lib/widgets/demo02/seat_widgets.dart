@@ -18,9 +18,9 @@ AppBar getDemo02SeatAppBar() {
 class Demo02Title extends StatelessWidget {
   const Demo02Title({
     Key? key,
-    this.title,
+    this.title = '',
   }) : super(key: key);
-  final title;
+  final String title;
 
   @override
   Widget build(BuildContext context) {

@@ -73,32 +73,27 @@ class _Demo03HomeScreenState extends State<Demo03HomeScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Text(
-                            title,
-                            style: const TextStyle(
-                                fontFamily: 'Quicksand',
-                                fontSize: 17.0,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          likeBtn,
-                        ],
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Text(
+                          title,
+                          style: const TextStyle(
+                              fontFamily: 'Quicksand',
+                              fontSize: 17.0,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        likeBtn,
+                      ],
                     ),
                     const SizedBox(
                       height: 5.0,
                     ),
-                    Container(
-                      // width: 175.0,
-                      child: const Text(
-                        'Scandinavian small sized double sofa imported full leather / Dale Italia oil wax leather black',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          color: Colors.grey,
-                        ),
+                    const Text(
+                      'Scandinavian small sized double sofa imported full leather / Dale Italia oil wax leather black',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.grey,
                       ),
                     ),
                     const SizedBox(

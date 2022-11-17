@@ -3,6 +3,7 @@ import 'package:flutter_ui_practices/screens/demo01/home_screen.dart';
 import 'package:flutter_ui_practices/screens/demo03/main_screen.dart';
 
 import '../screens/demo02/home_screen.dart';
+import '../screens/demo04/home_screens.dart';
 
 List<Navigation> navigations = [
   Navigation(
@@ -15,6 +16,8 @@ List<Navigation> navigations = [
       screen: const Demo02HomeScreen()),
   Navigation(
       name: "Furniture-Screens-UI", desc: "", screen: const Demo03MainScreen()),
+  Navigation(
+      name: "Pet-Screens-UI", desc: "", screen: const Demo04HomeScreen()),
 ];
 
 class Navigation {

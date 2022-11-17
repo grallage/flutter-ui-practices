@@ -57,6 +57,7 @@ flutter:
     - assets/demo01/
     - assets/demo02/
     - assets/demo03/
+    - assets/demo04/
     # - assets/demo01/kengenlogo.jpeg
     # - assets/demo01/airtellogo.png
     # - assets/demo01/totallogo.jpg
