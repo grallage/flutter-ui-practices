@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_practices/screens/demo03/product_detail_screen.dart';
 import 'package:flutter_ui_practices/widgets/demo03/home_widgets.dart';
 
 class Demo03HomeScreen extends StatefulWidget {
@@ -50,9 +51,9 @@ class _Demo03HomeScreenState extends State<Demo03HomeScreen> {
       padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
       child: GestureDetector(
         onTap: () {
-          // Navigator.push(context, MaterialPageRoute(builder: (context) {
-          //   return ProductDetailScreen();
-          // }));
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return const Demo03ProductDetailScreen();
+          }));
         },
         child: Container(
           color: Colors.white,
