@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_ui_practices/screens/demo01/home_screen.dart';
 import 'package:flutter_ui_practices/screens/demo03/main_screen.dart';
+import 'package:flutter_ui_practices/screens/demo05/main_screen.dart';
 
 import '../screens/demo02/home_screen.dart';
 import '../screens/demo04/home_screens.dart';
@@ -18,6 +19,8 @@ List<Navigation> navigations = [
       name: "Furniture-Screens-UI", desc: "", screen: const Demo03MainScreen()),
   Navigation(
       name: "Pet-Screens-UI", desc: "", screen: const Demo04HomeScreen()),
+  Navigation(
+      name: "Grocery-Shop-UI", desc: "", screen: const Demo05MainScreen()),
 ];
 
 class Navigation {
