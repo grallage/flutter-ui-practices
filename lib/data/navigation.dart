@@ -3,6 +3,7 @@ import 'package:flutter_ui_practices/screens/demo01/home_screen.dart';
 import 'package:flutter_ui_practices/screens/demo03/main_screen.dart';
 import 'package:flutter_ui_practices/screens/demo05/main_screen.dart';
 import 'package:flutter_ui_practices/screens/demo06/home_screen.dart';
+import 'package:flutter_ui_practices/screens/demo07/onboarding_screen.dart';
 
 import '../screens/demo02/home_screen.dart';
 import '../screens/demo04/home_screens.dart';
@@ -24,6 +25,10 @@ List<Navigation> navigations = [
       name: "Grocery-Shop-UI", desc: "", screen: const Demo05MainScreen()),
   Navigation(
       name: "Modern-Smart-Home-UI", desc: "", screen: const Demo06HomeScreen()),
+  Navigation(
+      name: "Page-Indicator-UI",
+      desc: "",
+      screen: const Demo07OnboardingScreen()),
 ];
 
 class Navigation {
